@@ -262,7 +262,7 @@ ol {
   background-color: var(--color-team);
 }
 
-.team-heading {
+.heading {
   color: var(--color-hd);
 
   font-weight: 700;
@@ -390,7 +390,7 @@ ol {
   overflow: hidden;
 }
 
-.list-about-heading {
+.heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
@@ -501,14 +501,15 @@ ol {
 
 .footer-social-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: var(--color-icon);
   fill: var(--bg-main-color);
   list-style: none;
   padding: 0;
   margin: 0;
-  justify-content: center;
-  align-items: center;
+
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -539,3 +540,13 @@ ol {
   padding: 0;
   margin: 0;
 } */
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
