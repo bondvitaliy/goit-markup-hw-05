@@ -6,6 +6,7 @@
   --color-add-txt: #757575;
   --color-add-hd: #ffffff;
   --color-team: #f5f4fa;
+  --color-icon: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -484,3 +485,57 @@ ol {
 .social-links:not(:last-child) {
   margin-right: 10px;
 }
+
+.footer-contact {
+  /* width: 231px; */
+  margin-right: 70px;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-socials {
+}
+
+.footer-social-link {
+  display: flex;
+
+  background-color: var(--color-icon);
+  fill: var(--bg-main-color);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--brand-color);
+  fill: var(--bg-main-color);
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bg-main-color);
+
+  margin-bottom: 20px;
+}
+
+/* footer-social {
+  display: flex;
+
+  fill: var(--bg-main-color);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+} */
