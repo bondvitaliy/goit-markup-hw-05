@@ -109,13 +109,21 @@ ol {
 }
 
 .link-contact:hover,
-.link-contact:focus,
-.envelope:hover,
+.link-contact:focus {
+  color: var(--brand-color);
+  fill: var(--brand-color);
+}
+
+/* .envelope:hover,
 .envelope:focus,
 .smartphone:hover,
 .smartphone:focus {
-  color: var(--brand-color);
-}
+} */
+
+/* list-contact-item:hover,
+list-contact-item:focus {
+  color: var(--brand-color); 
+} */
 
 .link-map {
   color: var(--color-add-hd);
@@ -422,22 +430,20 @@ ol {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  color: currentColor;
 }
 
 .smartphone {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  color: currentColor;
 }
 
-.envelope:hover,
+/* .envelope:hover,
 .envelope:focus,
 .smartphone:hover,
 .smartphone:focus {
   color: var(--brand-color);
-}
+} */
 
 .specifity-icon-bg {
   display: flex;
