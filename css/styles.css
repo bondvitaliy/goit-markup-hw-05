@@ -67,7 +67,7 @@ ol {
   margin-right: 50px;
 }
 
-.link-contact.tel {
+.list-contact-item:last-child {
   margin-left: 50px;
 }
 
@@ -101,12 +101,16 @@ ol {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--color-add-txt);
+
   text-decoration: none;
 }
 
 .link-contact:hover,
-.link-contact:focus {
+.link-contact:focus,
+.envelope:hover,
+.envelope:focus,
+.smartphone:hover,
+.smartphone:focus {
   color: var(--brand-color);
 }
 
@@ -125,6 +129,7 @@ ol {
 
 .footer-address {
   font-style: normal;
+  margin-top: 20px;
 }
 
 .logo-footer,
@@ -167,6 +172,19 @@ ol {
 .hero {
   background-color: var(--bg-add-color);
   padding: 200px 0;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/top-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .index-hero {
@@ -338,7 +356,7 @@ ol {
 } */
 
 /* .logo-footer {
-  padding-top: 60px;
+  margin-bottom: 20px;
 } */
 
 .footer {
@@ -346,17 +364,26 @@ ol {
   padding-bottom: 60px;
 }
 
-.list-item-footer:first-child {
+/* .list-item-footer:first-child {
   margin-top: 20px;
-}
+} */
 
 .list-item-footer:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.hidden {
-  display: none;
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .list-about-heading {
@@ -384,4 +411,25 @@ ol {
   padding: 20px 24px;
   border: solid #eeeeee;
   border-width: 0 1px 1px 1px;
+}
+
+.envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  color: currentColor;
+}
+
+.smartphone {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  color: currentColor;
+}
+
+.envelope:hover,
+.envelope:focus,
+.smartphone:hover,
+.smartphone:focus {
+  color: var(--brand-color);
 }
