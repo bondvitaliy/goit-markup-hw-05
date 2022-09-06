@@ -248,6 +248,8 @@ list-contact-item:focus {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero > .container {
@@ -604,7 +606,7 @@ list-contact-item:focus {
 
 .clients-link {
   display: block;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--color-icon-logo);
   border-radius: 4px;
 }
 
