@@ -98,7 +98,8 @@ ol {
   color: var(--color-hd);
 }
 
-.link-contact {
+.link-contact-footer,
+.link-contact-header {
   color: var(--color-add-txt);
   font-weight: 500;
   font-size: 14px;
@@ -108,10 +109,20 @@ ol {
   text-decoration: none;
 }
 
-.link-contact:hover,
-.link-contact:focus {
+.link-contact-header:hover,
+.link-contact-header:focus {
   color: var(--brand-color);
   fill: var(--brand-color);
+}
+
+.link-contact-header {
+  display: block;
+  padding: 32px 0;
+}
+
+.link-contact-footer:hover,
+.link-contact-footer:focus {
+  color: var(--brand-color);
 }
 
 /* .envelope:hover,
