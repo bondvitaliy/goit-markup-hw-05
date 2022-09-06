@@ -290,6 +290,7 @@ ol {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .list {
@@ -448,4 +449,38 @@ ol {
 .specifity-icon {
   width: 70px;
   height: 70px;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  padding-bottom: 0;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-main-color);
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--brand-color);
+  fill: var(--bg-main-color);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-links:not(:last-child) {
+  margin-right: 10px;
 }
