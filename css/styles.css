@@ -8,6 +8,7 @@
   --color-team: #f5f4fa;
   --color-icon: rgba(255, 255, 255, 0.1);
   --color-icon-logo: #afb1b8;
+  --color-pf-border: #eeeeee;
 }
 
 body {
@@ -372,9 +373,16 @@ list-contact-item:focus {
   margin-right: 8px;
 }
 
-/* .list-portfolio-item {
-  flex-basis: 33.333333%;
-} */
+.list-portfolio-item {
+  background-color: var(--bg-main-color);
+  /* border: 1px solid var(--color-pf-border); */
+}
+
+.list-portfolio-item:hover,
+.list-portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .list.samples {
   display: flex;
@@ -440,7 +448,7 @@ list-contact-item:focus {
 
 .portfolio-card {
   padding: 20px 24px;
-  border: solid #eeeeee;
+  border: solid var(--color-pf-border);
   border-width: 0 1px 1px 1px;
 }
 
