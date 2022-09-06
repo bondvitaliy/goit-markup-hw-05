@@ -5,6 +5,7 @@
   --color-hd: #212121;
   --color-add-txt: #757575;
   --color-add-hd: #ffffff;
+  --color-team: #f5f4fa;
 }
 
 body {
@@ -237,6 +238,7 @@ ol {
   text-transform: uppercase;
 
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .about-heading {
@@ -256,7 +258,7 @@ ol {
 }
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--color-team);
 }
 
 .team-heading {
@@ -432,4 +434,18 @@ ol {
 .smartphone:hover,
 .smartphone:focus {
   color: var(--brand-color);
+}
+
+.specifity-icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--color-team);
+  border-radius: 4px;
+}
+
+.specifity-icon {
+  width: 70px;
+  height: 70px;
 }
