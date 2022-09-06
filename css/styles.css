@@ -7,6 +7,7 @@
   --color-add-hd: #ffffff;
   --color-team: #f5f4fa;
   --color-icon: rgba(255, 255, 255, 0.1);
+  --color-icon-logo: #afb1b8;
 }
 
 body {
@@ -468,7 +469,7 @@ ol {
   align-items: center;
   background-color: var(--bg-main-color);
   border-radius: 50%;
-  fill: #afb1b8;
+  fill: var(--color-icon-logo);
 }
 
 .social-link:hover,
@@ -549,4 +550,25 @@ ol {
 
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.clients-logo {
+  fill: var(--color-icon-logo);
+}
+
+.clients-logo:hover,
+.clients-logo:focus {
+  fill: var(--brand-color);
+}
+
+.clients-link {
+  display: block;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--brand-color);
+  border: 1px solid var(--brand-color);
 }
