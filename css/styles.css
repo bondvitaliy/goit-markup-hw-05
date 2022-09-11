@@ -540,8 +540,8 @@ list-contact-item:focus {
   align-items: baseline;
 }
 
-.footer-socials {
-}
+/* .footer-socials {
+} */
 
 .footer-social-link {
   display: flex;
