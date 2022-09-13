@@ -444,9 +444,12 @@ ol {
   transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
 
   z-index: 1;
+
+  box-shadow: none;
 }
 
-.link-portfolio-box:hover .portfolio-item-description {
+.link-portfolio-box:hover .portfolio-item-description,
+.link-portfolio-box:focus .portfolio-item-description {
   opacity: 1;
   transform: translateY(0);
 }
