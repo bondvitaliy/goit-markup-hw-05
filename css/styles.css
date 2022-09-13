@@ -417,12 +417,36 @@ ol {
 
 .list-portfolio-item {
   background-color: var(--bg-main-color);
-  /* border: 1px solid var(--color-pf-border); */
+  overflow: hidden;
 }
 
 .link-portfolio-item {
   display: block;
   text-decoration: none;
+  position: relative;
+}
+
+.portfolio-item-description {
+  opacity: 0;
+  position: absolute;
+  transform: translateY(-100%);
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: var(--bg-main-color);
+  background-color: rgba(33, 150, 243, 0.9);
+
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+
+  transition: opacity 250ms var(--timing-function), transorm 250ms var(--timing-function);
+}
+
+.link-portfolio-box:hover .portfolio-item-description {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .link-portfolio-box {
