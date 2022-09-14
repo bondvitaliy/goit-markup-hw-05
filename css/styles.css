@@ -419,14 +419,40 @@ ol {
 
 .list-portfolio-item {
   background-color: var(--bg-main-color);
-  overflow: hidden;
 }
 
 .link-portfolio-item {
   display: block;
+  /* position: relative; */
   text-decoration: none;
-  position: relative;
 }
+
+.link-shadow {
+  display: block;
+  box-shadow: none;
+  transition: box-shadow 250ms var(--timing-function);
+}
+
+.link-portfolio-item:hover .link-shadow,
+.link-portfolio-item:focus .link-shadow {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* .link-portfolio-item {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  transition: box-shadow 250ms var(--timing-function);
+}
+
+.link-portfolio-item:hover,
+.link-portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+*/
 
 .portfolio-item-description {
   opacity: 0;
@@ -445,27 +471,31 @@ ol {
 
   transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
 
-  z-index: 1;
-
-  box-shadow: none;
+  overflow: hidden;
 }
 
-.link-portfolio-box:hover .portfolio-item-description,
-.link-portfolio-box:focus .portfolio-item-description {
+.link-portfolio-item:hover .portfolio-item-description,
+.link-portfolio-item:focus .portfolio-item-description {
   opacity: 1;
   transform: translateY(0);
+  overflow: hidden;
 }
 
 .link-portfolio-box {
-  box-shadow: none;
-  transition: box-shadow 250ms var(--timing-function);
+  position: relative;
+  overflow: hidden;
 }
 
-.link-portfolio-box:hover,
+/* .link-portfolio-box {
+  overflow: hidden;
+} */
+
+/* .link-portfolio-box:hover,
 .link-portfolio-box:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+  overflow: hidden;
+} */
 
 .list.samples {
   display: flex;
@@ -521,8 +551,6 @@ ol {
   padding: 20px 24px;
   border: solid var(--color-pf-border);
   border-width: 0 1px 1px 1px;
-
-  z-index: 10;
 }
 
 .envelope {
@@ -587,7 +615,6 @@ ol {
 }
 
 .footer-contact {
-  /* width: 231px; */
   margin-right: 70px;
 }
 
